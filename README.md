@@ -1,6 +1,4 @@
-This docker image is actually a dockerized version of [DNS Toys](https://github.com/knadh/dns.toys) with minor modifications to make it work with [ZeroLogDNS](https://zerologdns.com) infra.
-
-This image also includes the [DB](http://download.geonames.org/export/dump/) containing the cities used for geo.
+This repo is actually a modified version of [DNS Toys](https://github.com/knadh/dns.toys) wich was made to work with [ZeroLogDNS](https://zerologdns.com) infra.
 
 # Some sample commands
 In this version, you have to add ".zldns" after each "domain", which was needed to work with the ZeroLogDNS infrastructure.
@@ -12,7 +10,7 @@ The full list can be found here: [www.dns.toys](https://www.dns.toys)
 
 # Configuration
 
-A sample configuration can be found here: [config.sample.toml](https://github.com/knadh/dns.toys/blob/master/config.sample.toml)
+A sample configuration can be found here: [config.sample.toml](https://github.com/ZeroLogDNS/dnsfun/blob/main/config.sample.toml)
 
 The configuration file should be mounted in `/app/config.toml` inside the docker.
 
