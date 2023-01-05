@@ -243,7 +243,7 @@ func main() {
 		n := cidr.New()
 		h.register("cidr.zldns", n, mux)
 
-		help = append(help, []string{"convert cidr to ip range.", "kdig 172.16.0.0/16.cidr.zldns @%s"})
+		help = append(help, []string{"convert cidr to ip range.", "kdig 172.16.0.0/16.cidr.zldns +tls @%s"})
 	}
 
 	// PI.
@@ -258,7 +258,7 @@ func main() {
 		n := base.New()
 		h.register("base.zldns", n, mux)
 
-		help = append(help, []string{"convert numbers from one base to another", "kdig 100dec-hex.base.zldns @%s"})
+		help = append(help, []string{"convert numbers from one base to another", "kdig 100dec-hex.base.zldns +tls @%s"})
 	}
 
 	// Dictionary.
@@ -277,7 +277,7 @@ func main() {
 		n := dice.New()
 		h.register("dice.zldns", n, mux)
 
-		help = append(help, []string{"roll dice", "kdig 1d6.dice.zldns @%s"})
+		help = append(help, []string{"roll dice", "kdig 1d6.dice.zldns +tls @%s"})
 	}
 
 	// Random number generator.
