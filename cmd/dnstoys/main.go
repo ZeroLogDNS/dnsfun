@@ -296,7 +296,7 @@ func main() {
 		n := coin.New()
 		h.register("coin.zldns", n, mux)
 
-		help = append(help, []string{"toss coin", "kdig 2.coin.zldns +tls @%s"})
+		help = append(help, []string{"toss coin", "kdig coin.zldns +tls @%s"})
 	}
 
 	// Epoch / Unix timestamp conversion.

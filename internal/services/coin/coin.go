@@ -10,7 +10,7 @@ import (
 const (
 	heads     = "heads"
 	tails     = "tails"
-	maxTosses = 5
+	maxTosses = 1
 )
 
 type Coin struct{}
@@ -23,7 +23,7 @@ func New() *Coin {
 // Query returns the result of the given coin toss
 func (n *Coin) Query(q string) ([]string, error) {
 	tosses := 1
-	if q != "coin." {
+	if q != "coin.zldns." {
 		t, err := strconv.Atoi(q)
 		if err != nil {
 			return nil, errors.New("invalid coin toss query")
