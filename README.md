@@ -1,4 +1,4 @@
-This repo is actually a modified version of [DNS Toys](https://github.com/knadh/dns.toys) wich was made to work with [ZeroLogDNS](https://zerologdns.com) infra.
+This repo is actually a modified version of [DNS Toys](https://github.com/knadh/dns.toys) which was made to work with [ZeroLogDNS](https://zerologdns.com) infra.
 
 # Some sample commands
 In this version, you have to add ".zldns" after each "domain", which was needed to work with the ZeroLogDNS infrastructure.
