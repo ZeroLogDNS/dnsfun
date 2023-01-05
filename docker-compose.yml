@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    dnsfun:
+        hostname: dnsfun
+        ports:
+            - 127.0.0.10:4053:4053/tcp
+            - 127.0.0.10:4053:4053/udp
+        image: dnsfun:latest
+        volumes:
+            - ./config.toml:/app/config.toml
+        restart: unless-stopped
