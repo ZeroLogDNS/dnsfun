@@ -3,8 +3,8 @@ This repo is actually a modified version of [DNS Toys](https://github.com/knadh/
 # Some sample commands
 In this version, you have to add ".zldns" after each "domain", which was needed to work with the ZeroLogDNS infrastructure.
 ```
-dig budapest.time.zldns @127.0.0.10
-dig budapest.weather.zldns @127.0.0.10
+dig budapest.time.zldns @127.0.0.10 -p 4053
+dig budapest.weather.zldns @127.0.0.10 -p 4053
 ```
 The full list can be found here: [www.dns.toys](https://www.dns.toys)
 
