@@ -40,3 +40,19 @@ kdig budapest.time.zldns +tls @dns.zerologdns.com
 kdig budapest.weather.zldns +tls @dns.zerologdns.com
 ```
 The ZeroLogDNS version is limited and does not have all the features that the DNS Toys version has.
+
+For all available features.
+```
+kdig help.zldns +tls @dns.zerologdns.com
+```
+Output:
+```
+"convert numbers to words." "kdig 123456.words.zldns +tls @dns.zerologdns.com"
+"convert numbers from one base to another" "kdig 100dec-hex.base.zldns +tls @dns.zerologdns.com"
+"toss coin" "kdig coin.zldns +tls @dns.zerologdns.com"
+"weather info" "kdig budapest.weather.zldns +tls @dns.zerologdns.com"
+"get time for a city" "kdig budapest.time.zldns +tls @dns.zerologdns.com"
+"convert currency rates" "kdig 100EUR-HUF.exchange.zldns +tls @dns.zerologdns.com"
+"generate random numbers" "kdig 1-100.rand.zldns +tls @dns.zerologdns.com"
+"convert cidr to ip range." "kdig 172.16.0.0/16.cidr.zldns +tls @dns.zerologdns.com"
+```
